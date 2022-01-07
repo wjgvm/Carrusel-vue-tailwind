@@ -1,12 +1,15 @@
 {
   "name": "practicas",
   "version": "1.0.0",
-  "description": "",
+  "description": "arrusel de imagenes tailwind / Carousel widt tailwind",
   "main": "javascript.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.11"
+  }
 }

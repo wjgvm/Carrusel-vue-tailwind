@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrusel Tailwind v3.0.11</title>
+  <link href="/dist/output.css" rel="stylesheet" />
+  <style>
+    #radio1:checked~.first {
+      margin-left: 0;
+    }
+
+    #radio2:checked~.first {
+      margin-left: -20%;
+    }
+
+    #radio3:checked~.first {
+      margin-left: -40%;
+    }
+
+    #radio4:checked~.first {
+      margin-left: -60%;
+    }
+
+    #radio5:checked~.first {
+      margin-left: -80%;
+    }
+
+    #radio6:checked~.first {
+      margin-left: -100%;
+    }
+
+    #radio7:checked~.first {
+      margin-left: -120%;
+    }
+
+    #radio1:checked~label[for=radio1] {
+      background-color: #fff;
+      border-color: white;
+    }
+  </style>
+</head>
+
+<body class="h-screen w-screen flex justify-center items-center bg-cyan-600 relative">
+  <div class="slider w-full max-w-3xl h-112 rounded-xl overflow-hidden relative">
+    <div class="slides h-112 flex relative" style="width: 500%;">
+      <input type="radio" name="radio-btn" id="radio1" class="hidden" />
+      <input type="radio" name="radio-btn" id="radio2" class="hidden" />
+      <input type="radio" name="radio-btn" id="radio3" class="hidden" />
+      <input type="radio" name="radio-btn" id="radio4" class="hidden" />
+      <input type="radio" name="radio-btn" id="radio5" class="hidden" />
+      <input type="radio" name="radio-btn" id="radio6" class="hidden" />
+      <input type="radio" name="radio-btn" id="radio7" class="hidden" />
+      <div class="slide w-1/5 transition-all duration-1000 first">
+        <img src="https://picsum.photos/800/500?random=1" alt="https://picsum.photos/" class="max-w-3xl w-max h-112" />
+      </div>
+      <div class="slide w-1/5 transition-all duration-1000">
+        <img src="https://picsum.photos/800/500?random=2" alt="https://picsum.photos/" class="max-w-3xl w-max h-112" />
+      </div>
+      <div class="slide w-1/5 transition-all duration-1000">
+        <img src="https://picsum.photos/800/500?random=3" alt="https://picsum.photos/" class="max-w-3xl w-max h-112" />
+      </div>
+      <div class="slide w-1/5 transition-all duration-1000">
+        <img src="https://picsum.photos/800/500?random=4" alt="https://picsum.photos/" class="max-w-3xl w-max h-112" />
+      </div>
+      <div class="slide w-1/5 transition-all duration-1000">
+        <img src="https://picsum.photos/800/500?random=5" alt="https://picsum.photos/" class="max-w-3xl w-max h-112" />
+      </div>
+      <div class="slide w-1/5 transition-all duration-1000">
+        <img src="https://picsum.photos/800/500?random=6" alt="https://picsum.photos/" class="max-w-3xl w-max h-112" />
+      </div>
+      <div class="slide w-1/5 transition-all duration-1000">
+        <img src="https://picsum.photos/800/500?random=7" alt="https://picsum.photos/" class="max-w-3xl w-max h-112" />
+      </div>
+      <div class="navigation-auto"></div>
+    </div>
+    <div class="navigation-manual flex absolute w-full max-w-3xl -mt-10 justify-center space-x-10 ">
+      <label for="radio1"
+        class="manual-btn border-2 border-solid border-emerald-600 p-2 rounded-full cursor-pointer transition duration-300 hover:bg-emerald-600 checked:bg-emerald-600"></label>
+      <label for="radio2"
+        class="manual-btn border-2 border-solid border-emerald-600 p-2 rounded-full cursor-pointer transition duration-300 hover:bg-emerald-600 checked:bg-emerald-600"></label>
+      <label for="radio3"
+        class="manual-btn border-2 border-solid border-emerald-600 p-2 rounded-full cursor-pointer transition duration-300 hover:bg-emerald-600 checked:bg-emerald-600"></label>
+      <label for="radio4"
+        class="manual-btn border-2 border-solid border-emerald-600 p-2 rounded-full cursor-pointer transition duration-300 hover:bg-emerald-600 checked:bg-emerald-600"></label>
+      <label for="radio5"
+        class="manual-btn border-2 border-solid border-emerald-600 p-2 rounded-full cursor-pointer transition duration-300 hover:bg-emerald-600 checked:bg-emerald-600"></label>
+      <label for="radio6"
+        class="manual-btn border-2 border-solid border-emerald-600 p-2 rounded-full cursor-pointer transition duration-300 hover:bg-emerald-600 checked:bg-emerald-600"></label>
+      <label for="radio7"
+        class="manual-btn border-2 border-solid border-emerald-600 p-2 rounded-full cursor-pointer transition duration-300 hover:bg-emerald-600 checked:bg-emerald-600"></label>
+    </div>
+  </div>
+  <script src="javascript.js"></script>
+</body>
+
+</html>
