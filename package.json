@@ -1,7 +1,7 @@
 {
-  "name": "practicas",
-  "version": "1.0.0",
-  "description": "arrusel de imagenes tailwind / Carousel widt tailwind",
+  "name": "carrusel",
+  "version": "0.0.1",
+  "description": "Carrusel de imagenes tailwind / Carousel width tailwind",
   "main": "javascript.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

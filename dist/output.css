@@ -486,6 +486,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 48rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .transform {
   transform: var(--tw-transform);
 }
